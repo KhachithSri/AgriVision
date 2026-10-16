@@ -1,0 +1,12 @@
+                       precision    recall  f1-score   support
+
+   Apple___Apple_scab       0.99      1.00      1.00       127
+    Grape___Black_rot       1.00      0.98      0.99       168
+Potato___Early_blight       1.00      1.00      1.00       164
+Tomato___Early_blight       0.93      0.92      0.92       215
+ Tomato___Late_blight       0.97      0.97      0.97       375
+     Tomato___healthy       0.98      1.00      0.99       330
+
+             accuracy                           0.98      1379
+            macro avg       0.98      0.98      0.98      1379
+         weighted avg       0.98      0.98      0.98      1379

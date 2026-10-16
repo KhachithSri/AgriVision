@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local dataset archives, caches, and generated image splits
+/data/plantvillage/data.zip
+/data/plantvillage/.cache/
+/data/processed/
+/testing_files/data/processed/

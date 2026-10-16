@@ -1,0 +1,121 @@
+
+[
+  {
+    "class_name": "Apple___Apple_scab",
+    "crop": "Apple",
+    "disease": "Apple scab",
+    "status": "disease",
+    "symptoms": [
+      "Olive-green to dark, scabby lesions on leaves",
+      "Dark, rough lesions on fruit",
+      "Severe infections may cause leaf drop or fruit cracking"
+    ],
+    "favorable_conditions": [
+      "Wet leaves",
+      "Rainy or humid weather during susceptible growth stages"
+    ],
+    "management": [
+      "Remove fallen infected leaves to reduce sources of infection",
+      "Improve air circulation where practical",
+      "Use locally recommended apple scab management practices and fungicides when appropriate"
+    ]
+  },
+  {
+    "class_name": "Grape___Black_rot",
+    "crop": "Grape",
+    "disease": "Black rot",
+    "status": "disease",
+    "symptoms": [
+      "Brown leaf lesions that may develop dark margins",
+      "Fruit may shrivel into dark, hard mummies",
+      "Infected berries may develop dark spots before shriveling"
+    ],
+    "favorable_conditions": [
+      "Warm, wet weather",
+      "Prolonged moisture on susceptible plant tissues"
+    ],
+    "management": [
+      "Remove mummified berries and infected plant debris",
+      "Maintain canopy airflow and manage dense growth",
+      "Follow locally recommended grape black rot control practices"
+    ]
+  },
+  {
+    "class_name": "Potato___Early_blight",
+    "crop": "Potato",
+    "disease": "Early blight",
+    "status": "disease",
+    "symptoms": [
+      "Brown leaf spots that may show concentric rings",
+      "Lesions often develop first on older leaves",
+      "Yellowing and premature leaf loss may occur"
+    ],
+    "favorable_conditions": [
+      "Warm weather",
+      "Plant stress and extended periods of leaf wetness"
+    ],
+    "management": [
+      "Maintain balanced crop nutrition and avoid plant stress",
+      "Rotate crops and manage infected crop residues",
+      "Use locally recommended disease management measures when necessary"
+    ]
+  },
+  {
+    "class_name": "Tomato___Early_blight",
+    "crop": "Tomato",
+    "disease": "Early blight",
+    "status": "disease",
+    "symptoms": [
+      "Brown leaf spots with concentric, target-like rings",
+      "Lesions often begin on older leaves",
+      "Yellowing and leaf drop may occur as disease progresses"
+    ],
+    "favorable_conditions": [
+      "Warm, humid conditions",
+      "Leaf wetness and stressed plants"
+    ],
+    "management": [
+      "Remove infected lower leaves when practical",
+      "Water near the soil rather than wetting foliage",
+      "Rotate crops and remove infected plant debris",
+      "Use locally approved management measures when needed"
+    ]
+  },
+  {
+    "class_name": "Tomato___Late_blight",
+    "crop": "Tomato",
+    "disease": "Late blight",
+    "status": "disease",
+    "symptoms": [
+      "Water-soaked, irregular leaf lesions that can turn brown",
+      "White fungal-like growth may appear near lesion margins in humid conditions",
+      "Firm, brown lesions may develop on fruit"
+    ],
+    "favorable_conditions": [
+      "Cool to mild, wet weather",
+      "High humidity and prolonged leaf wetness"
+    ],
+    "management": [
+      "Inspect plants frequently and isolate suspected affected material where practical",
+      "Avoid prolonged leaf wetness",
+      "Remove infected plant material according to local guidance",
+      "Seek prompt local agricultural advice because the disease can spread rapidly"
+    ]
+  },
+  {
+    "class_name": "Tomato___healthy",
+    "crop": "Tomato",
+    "disease": "No target disease detected",
+    "status": "healthy_class",
+    "symptoms": [
+      "The image belongs to the dataset's healthy tomato class",
+      "The classifier did not identify one of its five target disease classes as the top prediction"
+    ],
+    "favorable_conditions": [],
+    "management": [
+      "Continue routine crop monitoring",
+      "Maintain appropriate irrigation and crop nutrition",
+      "Inspect plants regularly for new symptoms"
+    ]
+  }
+]

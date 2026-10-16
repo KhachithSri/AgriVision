@@ -1,0 +1,167 @@
+{
+  "classes": [
+    "Apple___Apple_scab",
+    "Grape___Black_rot",
+    "Potato___Early_blight",
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___healthy"
+  ],
+  "training_images": 4744,
+  "validation_images": 1187,
+  "test_images": 1379,
+  "best_validation_accuracy": 0.97893850042123,
+  "final_test_accuracy": 0.9760696156635243,
+  "classification_report": {
+    "Apple___Apple_scab": {
+      "precision": 0.9921875,
+      "recall": 1.0,
+      "f1-score": 0.996078431372549,
+      "support": 127.0
+    },
+    "Grape___Black_rot": {
+      "precision": 1.0,
+      "recall": 0.9821428571428571,
+      "f1-score": 0.990990990990991,
+      "support": 168.0
+    },
+    "Potato___Early_blight": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 164.0
+    },
+    "Tomato___Early_blight": {
+      "precision": 0.933649289099526,
+      "recall": 0.9162790697674419,
+      "f1-score": 0.9248826291079812,
+      "support": 215.0
+    },
+    "Tomato___Late_blight": {
+      "precision": 0.9731903485254692,
+      "recall": 0.968,
+      "f1-score": 0.9705882352941176,
+      "support": 375.0
+    },
+    "Tomato___healthy": {
+      "precision": 0.9763313609467456,
+      "recall": 1.0,
+      "f1-score": 0.9880239520958084,
+      "support": 330.0
+    },
+    "accuracy": 0.9760696156635243,
+    "macro avg": {
+      "precision": 0.9792264164286234,
+      "recall": 0.9777369878183831,
+      "f1-score": 0.9784273731435746,
+      "support": 1379.0
+    },
+    "weighted avg": {
+      "precision": 0.9759812468933103,
+      "recall": 0.9760696156635243,
+      "f1-score": 0.9759657033763067,
+      "support": 1379.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      127,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      165,
+      0,
+      3,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      164,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      197,
+      10,
+      7
+    ],
+    [
+      0,
+      0,
+      0,
+      11,
+      363,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      330
+    ]
+  ],
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.38309680419215464,
+      "train_accuracy": 0.8766863406408094,
+      "validation_accuracy": 0.9418702611625948
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.17376782932957952,
+      "train_accuracy": 0.9407672849915683,
+      "validation_accuracy": 0.95787700084246
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.14136255846294443,
+      "train_accuracy": 0.947512647554806,
+      "validation_accuracy": 0.945240101095198
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.14148260979845642,
+      "train_accuracy": 0.948566610455312,
+      "validation_accuracy": 0.9553496208930076
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.1070288308188602,
+      "train_accuracy": 0.9610033726812817,
+      "validation_accuracy": 0.970513900589722
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.11411693713016821,
+      "train_accuracy": 0.9586846543001686,
+      "validation_accuracy": 0.9216512215669755
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.09221512005973802,
+      "train_accuracy": 0.9666947723440135,
+      "validation_accuracy": 0.974726200505476
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.08716691514982844,
+      "train_accuracy": 0.967327150084317,
+      "validation_accuracy": 0.97893850042123
+    }
+  ],
+  "checkpoint_selection": "Validation accuracy"
+}

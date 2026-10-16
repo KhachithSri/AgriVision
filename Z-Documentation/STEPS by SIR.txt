@@ -1,0 +1,203 @@
+PROJECT 4
+a) Project Title
+AgriVision AI — Crop Disease Understanding and Farmer Advisory Assistant
+
+b) Detailed Project Description
+Crop diseases can reduce agricultural productivity significantly. A farmer may be able to photograph a leaf but may not know what symptoms indicate disease or what preventative action to take.
+
+This project builds a multimodal GenAI agricultural assistant.
+
+The student uploads an image of a leaf.
+
+The system:
+
+examines the image
+predicts/identifies the disease category
+explains the visible symptoms
+retrieves relevant agricultural information
+generates an easy-to-understand advisory
+clearly indicates uncertainty
+This makes the project a combination of:
+
+Computer Vision + Multimodal GenAI + RAG
+
+The goal is not to claim that the application replaces an agricultural expert.
+
+c) Dataset Details (freely available)
+PlantVillage Dataset
+The PlantVillage repository currently describes the dataset as an open-access collection of 54,306 healthy and diseased plant-leaf images, covering 14 crop species and 26 diseases. It also provides an accessible Hugging Face version.
+
+Official/public repository
+https://github.com/spMohanty/PlantVillage-Dataset
+
+Hugging Face dataset
+https://huggingface.co/datasets/mohanty/PlantVillage
+
+The repository provides predefined train/test splits designed to respect leaf grouping and reduce leakage.
+
+Recommended student subset
+Students should initially select 3–5 diseases instead of all 26.
+
+Example:
+
+Tomato
+Potato
+Grape
+Apple
+Corn
+This dramatically reduces laptop training requirements.
+
+d) Technical Requirements
+Recommended multimodal model
+Gemma 3 4B
+
+Gemma 3 4B is an image-text model available through Hugging Face and supports image + text interaction.
+
+Laptop recommendation
+16 GB RAM recommended
+GPU not mandatory for experimentation
+8 GB RAM students should use API inference instead
+Alternative
+Use a multimodal Gemini model through the Gemini API.
+
+Google currently provides a free developer tier for selected Gemini models, with usage limits.
+
+Supporting computer vision model
+Use a lightweight pretrained model:
+
+MobileNetV3
+EfficientNet-B0
+Tools
+Python
+PyTorch
+OpenCV
+Transformers
+Streamlit
+FAISS
+e) Detailed Implementation Steps
+Step 1
+Download PlantVillage.
+
+Step 2
+Select 3–5 diseases.
+
+Step 3
+Resize images.
+
+Example:
+
+224 × 224
+Step 4
+Train a lightweight CNN or fine-tune MobileNet.
+
+Step 5
+Evaluate disease classification.
+
+Step 6
+Create agricultural knowledge documents.
+
+Examples:
+
+tomato_blight.txt
+potato_blight.txt
+grape_black_rot.txt
+Step 7
+Create embeddings.
+
+Step 8
+Store them in FAISS.
+
+Step 9
+Upload an image.
+
+Step 10
+Generate visual description.
+
+Example prompt:
+
+Examine this leaf image. Describe visible symptoms and identify the most likely disease. Do not invent symptoms that are not visible.
+
+Step 11
+Retrieve agricultural information.
+
+Step 12
+Generate final response.
+
+Crop:
+Tomato
+
+Possible disease:
+Early Blight
+
+Visible symptoms:
+...
+
+Confidence:
+Moderate
+
+Preventive actions:
+...
+
+Consult an agricultural expert if:
+...
+Step 13
+Add local-language output.
+
+Students can optionally implement:
+
+English
+Kannada
+Hindi
+Step 14
+Evaluate:
+
+Classifier accuracy
+Precision
+Recall
+F1
+LLM explanation quality
+f) Deployment Details
+Farmer
+ ↓
+Streamlit
+ ↓
+Image Classifier
+ ↓
+RAG
+ ↓
+Gemma/Gemini
+ ↓
+Agricultural Advice
+Cloud deployment can use Google Cloud Run, whose current free allowance includes 2 million requests/month plus free compute allocations.
+
+g) Expected Results
+The system should:
+
+recognize selected crop diseases
+explain symptoms
+retrieve relevant agricultural information
+generate farmer-friendly explanations
+indicate confidence/uncertainty
+provide preventive guidance
+h) Evaluation Criteria
+Criterion	
+Image dataset preparation	
+Disease classifier	
+Multimodal GenAI	
+RAG	
+Explanation quality	
+Uncertainty handling	
+UI/deployment	
+
+
+Last date of Submission: 30-10-2026
+
+
+
+--
+Regards,
+Dr Praveen Kumar P S
+Adjunct Faculty,
+Department of Computer Science and Engineering,
+Siddaganga Institute of Technology, Tumakuru.
+Karnataka, India-572103
